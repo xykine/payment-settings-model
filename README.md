@@ -1,1 +1,1 @@
-# payment-settings-model
+# Payment-settings-model 

@@ -29,24 +29,17 @@ public class PaymentInfo implements Serializable {
     private String employeeID;
     private BigDecimal hourlyRate;
     private String companyID;
-
+    private String departmentName;
     private Set<PaymentSettings> paymentSettings;
-
     private String fullName;
-
     private BigDecimal netPay;
-
     private boolean completed;
     private boolean employeeIsLock;
-
     private String createdDate;
-
-
     private String lastModifiedDate;
-
     private String createdBy;
-
     private String lastModifiedBy;
-
     private int version;
+    private boolean isOffCycle;
+    private boolean offCycleActualValueSupplied;
 }

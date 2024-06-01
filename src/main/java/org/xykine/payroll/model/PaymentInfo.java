@@ -7,6 +7,9 @@ import java.math.BigDecimal;
 import java.util.Map;
 import java.util.Set;
 
+//private String departmentName;
+
+
 @Data
 public class PaymentInfo implements Serializable {
     private String id;
@@ -30,7 +33,7 @@ public class PaymentInfo implements Serializable {
     private BigDecimal hourlyRate;
     private String companyID;
     private String departmentName;
-    private Set<PaymentSettings> paymentSettings;
+    private Set<PaymentSettingsResponse> paymentSettings;
     private String fullName;
     private BigDecimal netPay;
     private boolean completed;
@@ -42,4 +45,7 @@ public class PaymentInfo implements Serializable {
     private int version;
     private boolean isOffCycle;
     private boolean offCycleActualValueSupplied;
+    private String offCycleID;
+    private CurrencyEnum currency;
+    private PaymentFrequencyEnum salaryFrequency;
 }

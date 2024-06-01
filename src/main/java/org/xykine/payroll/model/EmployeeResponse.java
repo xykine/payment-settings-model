@@ -1,93 +1,91 @@
 package org.xykine.payroll.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.util.Set;
 
-public record EmployeeResponse(
-        Long employeeID,
-        String firstName,
-        String lastName,
-        String middleName,
-        String fullName,
-        String employeeCode,
-        String employeeExternalCode,
-        String title,
-        String maritalStatus,
-        String addressLine1,
-        String addressLine2,
-        String city,
-        String state,
-        String lga,
-        String postalCode,
-        String dob,
-        String phone1,
-        String phone2,
-        String email,
-        String officialEmail,
-        String gender,
-        String idType,
-        String managerID,
-        String isManager,
-        String employeeGroupID,
-        String employeeSubGroupID,
-        String grade,
-        String level,
-        String contractType,
-        String startDate,
-        String endDate,
-        String position,
-        String departmentID,
-        String unitID,
-        String dimensionID,
-        String costCenterID,
-        String currencyID,
-        String pfaID,
-        String bankID,
-        String salaryFrequency,
-        String accountType,
-        String bankAccountNo,
-        String wageEmployee,
-        String isTaxable,
-        String isActive,
-        String isDirty,
-        String encodedImage,
-        String isDisable,
-        String disableDate,
-        String isMedical,
-        String medicalDate,
-        String locationID,
-        String taxStateID,
-        String taxStateName,
-        String isPensionable,
-        String changeStateID,
-        String businessUnitID,
-        String bvn,
-        String taxIDNo,
-        String taxClass,
-        String bankPaymentName,
-        String sfRecord,
-        int nombreDePart,
-        BigDecimal basicSalary,
-        BigDecimal hourlyRate,
-        String band,
-        Long paymentInfoId,
-        Long employeeLockID,
-        boolean isEmployeeLocked,
-        Instant createdDate,
-        Instant lastModifiedDate,
-        String createdBy,
-        String lastModifiedBy,
-        int version
-) {
 
-    public static String formatDate(LocalDate date) {
-        // Define a DateTimeFormatter with the desired format
-        if(date == null){
-            return null;
-        }
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        return date.format(formatter);
-    }
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class EmployeeResponse {
+    private String employeeID;
+    private String firstName;
+    private String lastName;
+    private String middleName;
+    private String fullName;
+    private String employeeCode;
+    private String employeeExternalCode;
+    private String title;
+    private String maritalStatus;
+    private String addressLine1;
+    private String addressLine2;
+    private String city;
+    private String state;
+    private String lga;
+    private String postalCode;
+    private String dob;
+    private String phone1;
+    private String phone2;
+    private String email;
+    private String officialEmail;
+    private String gender;
+    private String idType;
+    private String managerID;
+    private String isManager;
+    private String employeeGroupID;
+    private String employeeSubGroupID;
+    private String grade;
+    private String level;
+    private String contractType;
+    private String startDate;
+    private String endDate;
+    private String position;
+    private String departmentID;
+    private String unitID;
+    private String dimensionID;
+    private Set<BankInformation>bankInformation;
+    private String wageEmployee;
+    private String isTaxable;
+    //TODO Date activated and deactived should be added
+    //TODO change the isActive back to boolean
+    private String isDirty;
+    private String encodedImage;
+    private String isDisable;
+    private String disableDate;
+    private String isMedical;
+    private String medicalDate;
+    private String locationID;
+    private String taxStateID;
+    private String taxStateName;
+    private String isPensionable;
+    private String changeStateID;
+    private String businessUnitID;
+    private String bvn;
+    private String taxIDNo;
+    private String taxClass;
+    private String bankPaymentName;
+    private String sfRecord;
+    int nombreDePart;
+    private BigDecimal basicSalary;
+    private BigDecimal hourlyRate;
+    private String band;
+    private String paymentInfoId;
+    private String employeeLockID;
+    boolean employeeIsLocked;
+    private Set<PaymentSettingsResponse> paymentSettings;
+    private String companyID;
+    private boolean active;
+    private String payScaleID;
+    private Instant createdDate;
+    private Instant lastModifiedDate;
+    private String createdBy;
+    private String lastModifiedBy;
+    private int version;
 }

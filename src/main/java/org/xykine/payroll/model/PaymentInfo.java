@@ -48,4 +48,5 @@ public class PaymentInfo implements Serializable {
     private String offCycleID;
     private CurrencyEnum currency;
     private PaymentFrequencyEnum salaryFrequency;
+    private BigDecimal exchangeRate;
 }

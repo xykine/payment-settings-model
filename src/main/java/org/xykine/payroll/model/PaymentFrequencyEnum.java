@@ -1,7 +1,7 @@
 package org.xykine.payroll.model;
 
 public enum PaymentFrequencyEnum {
-    MONTHLY("Monthly "),
+    MONTHLY("Monthly"),
     WEEKLY("Weekly"),
     BI_WEEKLY("Bi-weekly"),
     DAILY("Daily"),

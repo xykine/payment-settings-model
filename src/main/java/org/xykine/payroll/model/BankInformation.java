@@ -20,5 +20,5 @@ public class BankInformation {
     private PaymentFrequencyEnum salaryFrequency;
     private String accountType;
     private String bankAccountNo;
-    private boolean isMain;
+    private boolean primary;
 }

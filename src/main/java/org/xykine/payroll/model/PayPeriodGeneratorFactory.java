@@ -1,7 +1,5 @@
 package org.xykine.payroll.model;
 
-import org.xykine.payroll.model.enums.PaymentFrequencyEnum;
-
 public class PayPeriodGeneratorFactory {
     public static PayPeriodGenerator getPayPeriodGenerator(PaymentFrequencyEnum frequency) {
         return switch (frequency) {

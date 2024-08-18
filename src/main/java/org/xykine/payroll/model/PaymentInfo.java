@@ -2,7 +2,6 @@ package org.xykine.payroll.model;
 
 import lombok.Data;
 import org.xykine.payroll.model.enums.CurrencyEnum;
-import org.xykine.payroll.model.enums.PaymentFrequencyEnum;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

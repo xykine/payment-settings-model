@@ -1,4 +1,4 @@
-package org.xykine.payroll.model.enums;
+package org.xykine.payroll.model;
 
 public enum PaymentFrequencyEnum {
     MONTHLY("Monthly"),

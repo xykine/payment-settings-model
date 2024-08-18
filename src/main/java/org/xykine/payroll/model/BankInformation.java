@@ -6,7 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.xykine.payroll.model.enums.CurrencyEnum;
-import org.xykine.payroll.model.enums.PaymentFrequencyEnum;
 
 @Data
 @NoArgsConstructor

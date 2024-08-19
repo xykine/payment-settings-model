@@ -51,6 +51,7 @@ public class EmployeeResponse {
     private String unitID;
     private String dimensionID;
     private Set<BankInformation>bankInformation;
+    private Set<UserRole> roles;
     private String wageEmployee;
     private String isTaxable;
     //TODO Date activated and deactived should be added

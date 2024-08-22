@@ -50,4 +50,5 @@ public class PaymentInfo implements Serializable {
     private CurrencyEnum currency;
     private PaymentFrequencyEnum salaryFrequency;
     private ExchangeInfo exchangeInfo;
+    private long totalNumberOfEmployees;
 }

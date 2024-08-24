@@ -51,4 +51,5 @@ public class PaymentInfo implements Serializable {
     private PaymentFrequencyEnum salaryFrequency;
     private ExchangeInfo exchangeInfo;
     private long totalNumberOfEmployees;
+    private Map<String, BigDecimal> ytdReport;
 }

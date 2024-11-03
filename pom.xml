@@ -6,7 +6,7 @@
 
     <groupId>org.xykine.payroll</groupId>
     <artifactId>payment-settings-model</artifactId>
-    <version>7</version>
+    <version>10</version>
 
     <properties>
         <java.version>17</java.version>
@@ -29,9 +29,9 @@
 
     <distributionManagement>
         <repository>
-            <id>internal.repo</id>
-            <name>Temporary Staging Repository</name>
-            <url>file://${project.build.directory}/mvn-artifact</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/xykineltd/payment-settings-model</url>
         </repository>
     </distributionManagement>
 

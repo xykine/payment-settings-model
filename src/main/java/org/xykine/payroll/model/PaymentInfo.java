@@ -10,7 +10,6 @@ import java.util.Set;
 
 //private String departmentName;
 
-
 @Data
 public class PaymentInfo implements Serializable {
     private String id;
@@ -52,4 +51,7 @@ public class PaymentInfo implements Serializable {
     private ExchangeInfo exchangeInfo;
     private long totalNumberOfEmployees;
     private Map<String, BigDecimal> ytdReport;
+    private String versionNumber;
+    private String testField;
+    private String testField2;
 }
